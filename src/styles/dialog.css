@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     max-width: 80vw;
+    position: relative;
 }
 .dialog {
     font-family: "Nanum Gothic", sans-serif;
@@ -36,6 +37,19 @@
     background: none;
 }
 
+.quick-exit {
+    padding: 3px 4px;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    transition: .3s;
+}
+.quick-exit:hover {
+    opacity: .3;
+    transition: .3s;
+}
+
 .label {
     display: flex;
     gap: 5px;
@@ -47,9 +61,17 @@
     background-position: center;
     background-size: cover;
 }
+.label.small > div:nth-child(1) {
+    width: 25px;
+    height: 25px;
+}
 
 
 .big {
+    font-size: 25px;
+    font-weight: bolder;
+}
+.small {
     font-size: 20px;
     font-weight: bolder;
 }

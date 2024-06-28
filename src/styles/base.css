@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 body {
@@ -11,4 +12,9 @@ body {
 header {
     display: flex;
     justify-content: center;
+}
+
+.preview {
+    width: fit-content;
+    position: relative;
 }
